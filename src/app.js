@@ -16,6 +16,8 @@ app.set("views", "./src/views"); //aca le pasamos la ruta para que los encuentre
 app.get("/", (req, res) => {
     res.render("home")
 })
+app.get("/upload", (req, res) => {
+    res.render("upload")})
 //listen
 app.listen(PUERTO, () => {
     console.log(`Conectado a http://localhost:${PUERTO}`);
