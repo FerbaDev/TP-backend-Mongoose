@@ -3,6 +3,7 @@ const app = express();
 const PUERTO = 8080;
 import exphbs from "express-handlebars";
 import multer from "multer";
+import imagenRouter from "./routes/imagen.router.js"
 import "../src/database.js";
 
 //middleware
@@ -25,11 +26,7 @@ app.set("view engine", "handlebars"); //aca le decimos que el motor es handlebar
 app.set("views", "./src/views"); //aca le pasamos la ruta para que los encuentre
 
 //Rutas
-app.get("/", (req, res) => {
-    res.render("home")
-})
-app.get("/upload", (req, res) => {
-    res.render("upload")})
+app.use("/", imagenRouter)
 
 
 //listen
