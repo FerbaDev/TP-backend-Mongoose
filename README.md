@@ -4,7 +4,19 @@
 
 empieza con la iniciacion ----------- 02:46
 
-dejé en 03:02
+conectando handlebars ---------- 03:05
+
+partials (header) ------------- 03:12
+
+se crea formulario para subir imagenes ------- 03:15
+
+models para subir archivos -------- 03:35
+
+se configura multer ---------- 03:40
+
+
+
+dejé en 03:43
 
 
 () => {}
